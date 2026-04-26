@@ -72,7 +72,7 @@
  }
 
 /*button*/
-button{
+.button{
    font-size: 25px;
    font-family: 'Times New Roman', Times, serif;
    background-color: rgb(156, 120, 103);
@@ -83,13 +83,14 @@ button{
    cursor: pointer;
    transform: scale(1.05);
    margin-bottom: 100px;
+   text-decoration: none;
 }
 
-button:hover{
+.button:hover{
    background-color: rgb(205, 168, 138);
 }
 
-button:active{
+.button:active{
    transform: scale(0.95);
 }
 
