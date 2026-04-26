@@ -8,7 +8,7 @@ body{
     min-height: 120vh;
     display: flex;
     flex-direction: column;
-    background-image: url("../Images/Background4.jpg");
+    background-image: url("Background4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
