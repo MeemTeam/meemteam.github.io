@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #408fa5;
+    background-color: #d6dde2;
+}
+.navbar{
+    position: absolute;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins';
+    size: 10px;
+}
+.navbar ul {
+    display: flex;
+    font-family: Roboto;
+    list-style: none;
+    margin: 35px;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar ul li a:hover {
+    color: var(--main);
+    transition: 0.3s;
+}
+.btn {
+    border: 1px solid #408fa5;
+    padding: 5px 10px;
+    border-radius: 18px;
+    transition: 0.3s;
+    border-width: 3px;
+}
+.title{
+    text-align: center;
+    font-family: Roboto;
+    padding-top: 120px;
+}
+.places{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+.card{
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.places-section{
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    font-family: Roboto;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 70px;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 12px;
+    margin-top: auto;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+footer a {
+    color: white;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+}
+.social a:hover{
+    color: #408fa5;
+    transition: 0.3s;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+}
+.icons i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    width: 100%;
+}
