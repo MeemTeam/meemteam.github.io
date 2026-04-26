@@ -21,7 +21,7 @@ body{
     height: 3px;
     width: 100px;
     text-align: center;
-    background-color:#81812b;
+    background-color:rgb(156,120,103);
     border: none;
     margin: 20px auto;
 }
@@ -62,7 +62,7 @@ p{
     margin-left:11rem;
     opacity: 0;
     transition: 0.3s;
-    background-color:#81812b;
+    background-color:rgb(156,120,103);
     border-radius: 15px;
     padding:10px;
     color:#fff;
@@ -82,14 +82,14 @@ ul li:hover p{
     font-size:20px;
     font-weight: 500;
     border-radius: 10px;
-    background-color:#81812b;
+    background-color:rgb(156,120,103);
     color:#fff;
     margin:10px auto;
     border: none;
 }
 .button2 button:hover{
     background-color: #ecf0f3;
-    color: #81812b;
+    color:rgb(156,120,103);
 }
 .button1 button{
     width: auto;
@@ -98,12 +98,12 @@ ul li:hover p{
     font-weight: 500;
     border-radius: 10px;
     background-color:#ecf0f3;
-    color:#81812b;
+    color:rgb(156,120,103);
     margin:10px auto;
     border:none;
 }
 .button1 button:hover{
-    background-color: #81812b;
+    background-color:rgb(156,120,103);
     color: #fff;
 }
 /*img style start*/
