@@ -1,0 +1,89 @@
+/* booking page */
+
+body{ font-size: 14px;
+    background-color: rgb(100, 156, 202);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{ font-size: 35px; 
+color: whitesmoke; 
+box-shadow: white;
+text-align: center;
+margin: 5px; padding: 0px;}
+ input,select{ font-size: 20px;
+    border-radius: 10px;}
+    select{ font-size: 15px;
+        border-radius: 10px;}
+ label{ font-size: 20px;
+color: whitesmoke;
+font-weight: bold;}
+form{ background: rgb(218, 218, 211 ,0.3);
+backdrop-filter: blur(10px);
+border: rgb(218, 218, 211);
+border-radius: 15px;
+padding: 15px; width: 400px; 
+margin: auto;}
+.btn,button{ font-size: 20px;
+border-radius: 10px; font-weight: bold;
+display: block;
+margin: 20px; 
+color:  blue;
+}
+button:hover{background-color: darkgray;}
+footer{text-align: center;
+    display: flex;
+    font-family: Roboto;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 70px;
+    width: 50%;
+    text-align: center;
+    padding: 12px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+footer a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.phone{ font-size: 15px;
+ font-weight: bold;
+color: white;
+text-align: center;}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px;
+}
+.social a:hover{
+    color: #408fa5;
+    transition: 0.3s;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+}
+.icons i{ margin: 20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    width: 100%;
+}
+
+.login{font-size: 20px;
+text-align: center;}
+a:hover{background-color:rgb(218, 218, 211, 0.3);}
+a{text-decoration: none;
+color: blue;}

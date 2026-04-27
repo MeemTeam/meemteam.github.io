@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="stylemaha.css">
+</head>
+<body>
+ <h1>Book Your trip</h1><br><br><br>
+ <main>
+  <form onsubmit="return booktrip(this)">
+   <label>Full Name:</label> 
+    <input type="text" name="name"><br><br><br>
+    <label>Email</label>
+    <input type="email" name="email"><br><br><br>
+    <label>Destination:</label>
+     <select name="destination">
+       <option>GIZA</option>
+       <option>ALEXANDRIA</option>
+       <option>SINA</option>
+       <option>FAYOUM</option>
+       <option>ASWAN</option>
+       <option>LUXOR</option>
+     </select><br><br><br>  
+     <label>Phone Number:</label>
+     <input type="tel" name="phone"><br><br><br>
+     <label>Check-In Date:</label>
+     <input type="date" name="date"><br><br><br>
+     <label>Number Of people:</label>
+     <input type="number" name="people"><br><br><br><br>
+     <button type="submit">Book Now</button><br><br><br><br>
+    </form>
+ </main>
+  <script src="booking.js"></script>
+   <footer>
+    <button> <a href="index.html">Back to Home</a> </button>
+     <br><br>
+      <div class="social">
+          <a href="aboutus.html" class="btn">About Us</a>
+          <div class="contact">
+              <p class="phone"> Phone: 01012345678</p>
+              <div class="icons">
+                  <Span><i class="fa-brands fa-facebook-f"></i></Span>
+                  <Span><i class="fa-brands fa-instagram"></i></Span>
+                  <Span><i class="fa-brands fa-whatsapp"></i></Span>
+              </div>
+          </div>
+      </div>
+      <div class="fotter-buttom">
+          <p class="by">© Designed By Meem Team 2026</p>
+      </div>
+  
+    <p>@2026 Travel Booking  Designed By Meem Team</p>
+  </footer>
+</body>
+</html>
