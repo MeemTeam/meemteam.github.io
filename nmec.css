@@ -1,0 +1,262 @@
+ body{
+    height: 100vh;
+    background-color: rgb(228, 204, 193);
+    font-family: Roboto;
+ }
+ *{
+   box-sizing: border-box;
+ }
+
+ /*cards*/
+ /*images*/
+ .images{
+   display: flex;
+   gap: 10px;
+ }
+  .images img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+ }
+ 
+ .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 40px;
+    justify-content: center;
+    margin: 40px auto;
+ }
+
+ .card{
+    background: #f9f9f9;
+    width: 300px;
+    padding: 0px;
+    border-radius: 10px;
+    gap: 10px;
+    overflow: hidden;
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+    transition: 0.3s;
+ }
+
+ .card:hover{
+   transform: translateY(-10px);
+ }
+
+ .content p{
+    font-size: 20px;
+    text-align: center;
+ }
+
+ .card {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card input {
+  display: none;
+}
+
+.images {
+  display: flex;
+  width: 300%;
+  transition: 0.5s;
+}
+
+.images img {
+  width: 100%;
+}
+/*cards dots*/
+
+
+/* dots */
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dots label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/*card1*/
+#c1-img1:checked ~ .images {
+  margin-left: 0%;
+}
+
+#c1-img2:checked ~ .images {
+  margin-left: -100%;
+}
+
+#c1-img3:checked ~ .images {
+  margin-left: -200%;
+}
+/*card2*/
+#c2-img1:checked ~ .images {
+  margin-left: 0%;
+}
+
+#c2-img2:checked ~ .images {
+  margin-left: -100%;
+}
+
+#c2-img3:checked ~ .images {
+  margin-left: -200%;
+}
+/*card3*/
+#c3-img1:checked ~ .images {
+  margin-left: 0%;
+}
+
+#c3-img2:checked ~ .images {
+  margin-left: -100%;
+}
+
+#c3-img3:checked ~ .images {
+  margin-left: -200%;
+}
+/*card4*/
+#c4-img1:checked ~ .images {
+  margin-left: 0%;
+}
+
+#c4-img2:checked ~ .images {
+  margin-left: -100%;
+}
+
+#c4-img3:checked ~ .images {
+  margin-left: -200%;
+}
+/*card5*/
+#c5-img1:checked ~ .images {
+  margin-left: 0%;
+}
+
+#c5-img2:checked ~ .images {
+  margin-left: -100%;
+}
+
+#c5-img3:checked ~ .images {
+  margin-left: -200%;
+}
+/*card6*/
+#c6-img1:checked ~ .images {
+  margin-left: 0%;
+}
+
+#c6-img2:checked ~ .images {
+  margin-left: -100%;
+}
+
+#c6-img3:checked ~ .images {
+  margin-left: -200%;
+}
+
+/*end cards*/
+
+
+ /*upper details*/
+ .detailsup p{
+   font-size: 20px;
+   padding: 10px;
+   margin-left: 25px;
+ }
+
+/*button*/
+.button{
+   font-size: 25px;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: rgb(156, 120, 103);
+   color: #f9f9f9;
+   padding: 5px;
+   border: none;
+   border-radius: 10%;
+   cursor: pointer;
+   transform: scale(1.05);
+   margin-bottom: 100px;
+   text-decoration: none;
+}
+
+.button:hover{
+   background-color: rgb(205, 168, 138);
+}
+
+.button:active{
+   transform: scale(0.95);
+}
+
+.buttons{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 25px;
+}
+
+/*lower details*/
+.detailsdw{
+   font-size: 20px;
+   padding: 10px;
+   text-align: center;
+
+}
+
+/*footer*/
+ footer {
+    display: flex;
+    font-family: Roboto;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 70px;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 12px;
+    margin-top: auto;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+footer a {
+    color: white;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px;
+}
+.social a:hover{
+    color: #408fa5;
+    transition: 0.3s;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+}
+.icons i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    width: 100%;
+}
