@@ -1,44 +1,109 @@
 /* booking page */
 
-body{ font-size: 14px;
-    background-color: rgb(100, 156, 202);
+body{ 
+    font-size: 14px;
+    height: 500px;
+    font-family: Roboto;
+    background-color: rgb(203 171 156);
     background-repeat: no-repeat;
     background-position: center;
 }
-h1{ font-size: 35px; 
-color: whitesmoke; 
-box-shadow: white;
-text-align: center;
-margin: 5px; padding: 0px;}
- input,select{ font-size: 20px;
-    border-radius: 10px;}
-    select{ font-size: 15px;
-        border-radius: 10px;}
- label{ font-size: 20px;
-color: whitesmoke;
-font-weight: bold;}
-form{ background: rgb(218, 218, 211 ,0.3);
-backdrop-filter: blur(10px);
-border: rgb(218, 218, 211);
-border-radius: 15px;
-padding: 15px; width: 400px; 
-margin: auto;}
-.btn,button{ font-size: 20px;
-border-radius: 10px; font-weight: bold;
-display: block;
-margin: 20px; 
-color:  blue;
+h1{ 
+    font-size: 40px; 
+    color: white; 
+    box-shadow: white;
+    text-align: center;
+    margin: 0; 
+    padding-top: 50px;
 }
-button:hover{background-color: darkgray;}
-footer{text-align: center;
+
+input,
+select{
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+select{
+    font-size: 15px;
+    border-radius: 10px;
+}
+label{ 
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+form{
+    text-align: center;
+    background-color: rgb(150 104 82 / 30%);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    border: rgb(218, 218, 211);
+    border-radius: 20px;
+    padding: 30px;
+    width: 420px; 
+    height: 320px;
+    margin: auto;
+}  
+button{
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid rgb(156,120,103);
+    border-radius: 20px;
+    
+}
+ 
+
+
+
+#btn-color{
+    border: 3px solid rgb(150 108 89) ;
+    background-color: rgb(150 108 89);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+#btn-color:hover{
+    outline: 2px solid rgb(150 108 89);
+    border-color: rgb(150 108 89);
+    transform: scale(1.05);
+    color: white;
+}
+.btn {
+    border: 1px solid rgb(150 108 89) ;
+    padding: 5px 10px;
+    border-radius: 18px;
+    transition: 0.3s;
+    border-width: 2.5px;
+}
+.btn:hover{
+    background-color: rgb(156,120,103);
+}
+section{
+    height: 300px;
+}
+.book-form{
+    height: 620px;
+}
+
+footer {
     display: flex;
     font-family: Roboto;
     flex-direction: column;
     align-items: center;
-    border-radius: 70px;
-    width: 50%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
-    padding: 12px;
+    padding: -1px 30px;
+    margin-top: auto;
+    height: 15vh;
+    padding-top: 10px;
+
+
 }
 .contact{
     display: flex;
@@ -46,34 +111,30 @@ footer{text-align: center;
     gap: 30px;
 }
 footer a {
+    color: white;
     display: block;
     margin: 10px 0;
     text-decoration: none;
 }
-.phone{ font-size: 15px;
- font-weight: bold;
-color: white;
-text-align: center;}
 .social{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 10px 50px;
+    padding: 0px 50px;
 }
 .social a:hover{
-    color: #408fa5;
+    color: white;
     transition: 0.3s;
 }
 .icons{
     display: flex;
     gap: 15px;
 }
-.icons i{ margin: 20px;
+.icons i{
     font-size: 20px;
     color: white;
     cursor: pointer;
-    text-align: center;
 }
 .footer-bottom{
     text-align: center;
@@ -81,9 +142,16 @@ text-align: center;}
     padding-top: 10px;
     width: 100%;
 }
-
-.login{font-size: 20px;
-text-align: center;}
-a:hover{background-color:rgb(218, 218, 211, 0.3);}
-a{text-decoration: none;
-color: blue;}
+.login{
+    font-size: 20px;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+a:hover{
+    background-color:rgb(156,120,103,0.3);
+}
+a{
+    text-decoration: none;
+    color: rgb(121 97 85);
+}

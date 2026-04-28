@@ -7,51 +7,55 @@
     <link rel="stylesheet" href="stylemaha.css">
 </head>
 <body>
- <h1>Book Your trip</h1><br><br><br>
- <main>
-  <form onsubmit="return booktrip(this)">
-   <label>Full Name:</label> 
-    <input type="text" name="name"><br><br><br>
-    <label>Email</label>
-    <input type="email" name="email"><br><br><br>
-    <label>Destination:</label>
-     <select name="destination">
-       <option>GIZA</option>
-       <option>ALEXANDRIA</option>
-       <option>SINA</option>
-       <option>FAYOUM</option>
-       <option>ASWAN</option>
-       <option>LUXOR</option>
-     </select><br><br><br>  
-     <label>Phone Number:</label>
-     <input type="tel" name="phone"><br><br><br>
-     <label>Check-In Date:</label>
-     <input type="date" name="date"><br><br><br>
-     <label>Number Of people:</label>
-     <input type="number" name="people"><br><br><br><br>
-     <button type="submit">Book Now</button><br><br><br><br>
-    </form>
- </main>
-  <script src="booking.js"></script>
-   <footer>
-    <button> <a href="index.html">Back to Home</a> </button>
-     <br><br>
-      <div class="social">
-          <a href="aboutus.html" class="btn">About Us</a>
-          <div class="contact">
-              <p class="phone"> Phone: 01012345678</p>
-              <div class="icons">
-                  <Span><i class="fa-brands fa-facebook-f"></i></Span>
-                  <Span><i class="fa-brands fa-instagram"></i></Span>
-                  <Span><i class="fa-brands fa-whatsapp"></i></Span>
-              </div>
-          </div>
-      </div>
-      <div class="fotter-buttom">
-          <p class="by">© Designed By Meem Team 2026</p>
-      </div>
-  
-    <p>@2026 Travel Booking  Designed By Meem Team</p>
-  </footer>
+    <h1>Book Your trip</h1><br><br><br>
+    <main>
+        <form onsubmit="return booktrip(this)" class="book-form">
+            <label>Full Name:</label> 
+            <br>
+            <input type="text" name="name"><br><br><br>
+            <label>Email</label>
+            <br>
+            <input type="email" name="email"><br><br><br>
+            <label>Destination:</label>
+            <br>
+            <select name="destination">
+                <option>Grand Egyption Museum</option>
+                <option>Egyption Museum in Tahrir</option>
+                <option>National Museum of Egyption Civillzation</option>
+                <option>Alexandria National Museum</option>
+                <option>Luxor Museum </option>
+                <option>National Police Museum</option>
+            </select><br><br>
+            <label>Phone Number:</label>
+            <br>
+            <input type="tel" name="phone"><br><br><br>
+            <label>Check-In Date:</label>
+            <br>
+            <input type="date" name="date"><br><br><br>
+            <label>Number Of people:</label>
+            <br>
+            <input type="number" name="people"><br><br><br>
+            <button type="submit">Book Now</button><br><br><br>
+       </form>
+    </main>
+    <section></section>
+    <script src="booking.js"></script>
+     <footer>
+        <div class="social">
+            <a href="aboutus.html" class="btn" id="btn-color">About Us</a>
+            <a href="index.html" class="btn"> back To Home Page</a>
+            <div class="contact">
+                <p class="phone"> Phone: 01012345678</p>
+                <div class="icons">
+                    <Span><i class="fa-brands fa-facebook-f"></i></Span>
+                    <Span><i class="fa-brands fa-instagram"></i></Span>
+                    <Span><i class="fa-brands fa-whatsapp"></i></Span>
+                </div>
+            </div>
+        </div>
+        <div class="fotter-buttom">
+            <p class="by">© Designed By Meem Team 2026</p>
+        </div>
+    </footer>
 </body>
 </html>
