@@ -11,7 +11,7 @@
  /*images*/
  .images{
    display: flex;
-   gap: 0px;
+   gap: 1px;
  }
   .images img{
     width: 100%;
