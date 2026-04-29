@@ -11,7 +11,7 @@
  /*images*/
  .images{
    display: flex;
-   gap: 10px;
+   gap: 0px;
  }
   .images img{
     width: 100%;
@@ -33,7 +33,6 @@
     width: 300px;
     padding: 0px;
     border-radius: 10px;
-    gap: 10px;
     overflow: hidden;
 
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -174,7 +173,6 @@
 /*button*/
 .button{
    font-size: 25px;
-   font-family: 'Times New Roman', Times, serif;
    background-color: rgb(156, 120, 103);
    color: #f9f9f9;
    padding: 5px;
@@ -215,13 +213,14 @@
     font-family: Roboto;
     flex-direction: column;
     align-items: center;
-    border-radius: 70px;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    padding: 12px;
+    padding: 5px;
     margin-top: auto;
+    height: 18vh;
+
 }
 .contact{
     display: flex;
@@ -242,7 +241,7 @@ footer a {
     padding: 10px 50px;
 }
 .social a:hover{
-    color: #408fa5;
+    color: white;
     transition: 0.3s;
 }
 .icons{
