@@ -4,21 +4,36 @@
     box-sizing: border-box;
 }
 body{
-    color: #408fa5;
-    background-color: #d6dde2;
+    color: white;
+    background-color: rgb(228, 204, 193);
 }
+#btn-color{
+    border: 3px solid rgb(156,120,103) ;
+    background-color: rgb(156,120,103);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+#btn-color:hover{
+    outline: 2px solid rgb(156,120,103);
+    border-color: rgb(156,120,103);
+    transform: scale(1.05);
+    color: white;
+}
+
+
 .navbar{
     position: absolute;
     border-radius: 70px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.25);
     margin-top: 15px;
     width: 100%;
     padding: 0px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid white;
 }
-
 .logo{
     color: white;
     font-size: 24px;
@@ -27,7 +42,6 @@ body{
 }
 .navbar ul {
     display: flex;
-    font-family: Roboto;
     list-style: none;
     margin: 35px;
 }
@@ -38,24 +52,36 @@ body{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: large;
+    font-family: Roboto;
 }
 .navbar ul li a:hover {
-    color: var(--main);
     transition: 0.3s;
+    background-color: rgb(156,120,103);
+    border-radius: 18px;
+    padding: 7px;
 }
 .btn {
-    border: 1px solid #408fa5;
+    border: 1px solid rgb(156,120,103) ;
     padding: 5px 10px;
     border-radius: 18px;
     transition: 0.3s;
-    border-width: 3px;
+    border-width: 2.5px;
 }
+
+
+
+
 .title{
     text-align: center;
     font-family: Roboto;
     padding-top: 120px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0 , 0 , 0 , 0.7);
 }
-.places{
+.museums{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -66,36 +92,63 @@ body{
     margin: 0 auto 50px auto;
 }
 .card{
-    background-color: white;
+    position: relative;
+    display: block;
+    background-color: #0f0f0f3d;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+}
+.card-info{
+    position: absolute;
+    font-family: Roboto;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(62, 36, 17, 0.9);
+    color: white;
+    padding: 15px;
+    transition: all 0.5s ease;
+}
+.card:hover .card-info {
+    bottom: 0; 
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 .card:hover{
     transform: translateY(-5px);
 }
 .card img{
     width: 100%;
-    height: 300px;
+    height: 310px;
     object-fit: cover;
 }
-.places-section{
+
+.museums-section{
     margin: auto;
 }
+
+
+
+
 
 footer {
     display: flex;
     font-family: Roboto;
     flex-direction: column;
     align-items: center;
-    border-radius: 70px;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    padding: 12px;
+    padding: 5px;
     margin-top: auto;
+    height: 15vh;
+
 }
 .contact{
     display: flex;
@@ -113,10 +166,10 @@ footer a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 30px;
+    padding: 10px 50px;
 }
 .social a:hover{
-    color: #408fa5;
+    color: white;
     transition: 0.3s;
 }
 .icons{
@@ -133,4 +186,13 @@ footer a {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 10px;
     width: 100%;
+}
+@media screen and (max-width: 600px){
+    nav ul {
+        flex-direction: column;
+    }
+    body {
+        display: block;
+        overflow-x: auto;
+    }
 }
