@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: Roboto;
+}
+body{
+    background-color: rgb(228, 204, 193);
+}
+#btn-color{
+    border: 3px solid rgb(156,120,103) ;
+    background-color: rgb(156,120,103);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+#btn-color:hover{
+    outline: 2px solid rgb(156,120,103);
+    border-color: rgb(156,120,103);
+    transform: scale(1.05);
+    color: white;
+}
+
+
+
+.navbar{
+    position: absolute;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.logo{
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins';
+    size: 10px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 35px;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    font-family: Roboto;
+}
+.navbar ul li a:hover {
+    transition: 0.3s;
+    background-color: rgb(156,120,103);
+    border-radius: 18px;
+    padding: 7px;
+}
+
+
+
+
+h1{
+    font-family: Roboto;
+}
+.about-section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    color: black;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+}
+.about-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.about-header h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background-color: rgb(156,120,103); 
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
+
+.title {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+    font-family: Roboto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    font-family: Roboto;
+}
+
+.about-card:hover {
+    transform: translateY(-15px);
+    background: rgb(156,120,103);
+    border-color:rgb(156,120,103);
+}
+
+
+
+
+
+
+.btn {
+    border: 1px solid rgb(156,120,103) ;
+    padding: 5px 10px;
+    border-radius: 18px;
+    transition: 0.3s;
+    border-width: 2.5px;
+}
+footer {
+    display: flex;
+    font-family: Roboto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+    height: 15vh;
+
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+footer a {
+    color: white;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px;
+}
+.social a:hover{
+    color: white;
+    transition: 0.3s;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+}
+.icons i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    width: 100%;
+}
+@media screen and (max-width: 600px){
+    nav ul {
+        flex-direction: column;
+    }
+    body {
+        display: block;
+        overflow-x: auto;
+    }
+}
