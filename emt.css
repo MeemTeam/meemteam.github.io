@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgb(228, 204,193);
+    font-family: Roboto;
 }
 h1{
     background-image: url(my_images/img1.jpg);
@@ -49,7 +50,7 @@ hr{
 
 }
 img{
-    height: 230px;
+    height: 80px;
     width: 100%;
     border-radius: 4px;
 }
