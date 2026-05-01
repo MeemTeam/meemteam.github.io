@@ -47,7 +47,7 @@
     text-align: center;
     padding: 5px;
     font-weight: bold;
-
+    color: #794008;
  }
 
  .cards p{
@@ -59,7 +59,7 @@
 
  /*upper details*/
  .detailsup p{
-   font-size: 20px;
+   font-size: 22px;
    padding: 10px;
    margin-left: 25px;
  }
@@ -96,23 +96,38 @@
 
 
 /*table*/
+.tables{
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+   justify-content: center;
+   margin-top: 45px;
+   margin-bottom: 40px;
+}
+
 table{
-    margin: auto;
-    border: 1px solid black;
-    border-radius:20px ;
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 5px;
-    margin-top: 30px;
+   border-collapse: collapse;
+   text-align: center;
+   width: 450px;
 }
-table td{
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 3px;
+th{
+   background-color: rgb(156, 120, 103);
+   font-size: 20px;
+   color: #f9f9f9;
 }
-table tr:hover td{
-   background-color:rgb(156,120,103);
-   color: #fff;
+
+td{
+   font-size: 20px;
+}
+
+tr:hover{
+   background-color: rgb(205, 168, 138);
+   color: #f9f9f9;
+}
+
+th, td{
+   border: 1px solid black;
+   padding: 5px;
 }
 
 /*footer*/
