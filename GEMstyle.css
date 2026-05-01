@@ -149,6 +149,19 @@ footer {
     height: 15vh;
 
 }
+#btn-color{
+    border: 3px solid rgb(156,120,103) ;
+    background-color: rgb(156,120,103);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+#btn-color:hover{
+    outline: 2px solid rgb(156,120,103);
+    border-color: rgb(156,120,103);
+    transform: scale(1.05);
+    color: white;
+}
 .contact{
     display: flex;
     align-items: center;
