@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
 }
@@ -23,30 +23,24 @@ h1{
 
 .intro{
     max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     align-items: center;
     color:rgb(50, 17, 1);
     font-weight: 550;
 
 }
 h2{
-    text-align: center;
     padding: 15px;
-    font-size: 39px;
+    font-size: 30px;
 }
 .head{
-    padding-bottom: 18px;
-    font-size: 29px;
-
-    text-align: center;
-    line-height: 33px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding: 15px;
 
 }
 hr{
     border:    0.5px solid blanchedalmond ;
-
 }
 img{
     height: 230px;
@@ -72,7 +66,7 @@ img{
     transition: all 0.3s ease;
 }
 .container{
-    max-width: 95%;
+    max-width: 80%;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
@@ -93,12 +87,13 @@ img{
 
  h3{
     padding: 15px 0;
-    font-size: 26px;
+    font-size: 18px;
 }
-.container.images.image.p{
-    
-    font-weight: 800;
-} 
+
+p{
+
+    font-size: 16px;
+}
 
 
  #b{
@@ -108,7 +103,7 @@ img{
     font-size: 30px;
     /* border: 1px solid rgb(48, 48, 48); */
     border-radius: 5px;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color:rgb(156, 120, 103) ;
     box-shadow: 3px 3px 15px rgb(36, 36, 36);
     transition: all 0.3s ease;
@@ -125,7 +120,8 @@ img{
     display: flex;
     justify-content: center;
     margin: 50px 0; 
- }   
+ }  
+
  #btn-color{
     border: 3px solid rgb(156,120,103) ;
     background-color: rgb(156,120,103);
