@@ -1,4 +1,9 @@
 /* booking page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body{ 
     font-size: 14px;
@@ -8,20 +13,78 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+#btn-color{
+    border: 3px solid rgb(156,120,103) ;
+    background-color: rgb(156,120,103);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+#btn-color:hover{
+    outline: 2px solid rgb(156,120,103);
+    border-color: rgb(156,120,103);
+    transform: scale(1.05);
+    color: white;
+}
+.navbar{
+    position: absolute;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-top: 15px;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.logo{
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins';
+    size: 10px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 35px;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    font-family: Roboto;
+}
+.navbar ul li a:hover {
+    transition: 0.3s;
+    background-color: rgb(156,120,103);
+    border-radius: 18px;
+    padding: 7px;
+}
+
 h1{ 
     font-size: 40px; 
     color: white; 
     box-shadow: white;
     text-align: center;
-    margin: 0; 
-    padding-top: 50px;
+    margin-bottom: 60px; 
+    padding-top: 155px;
+    text-shadow: 2px 2px 8px rgba(0 , 0 , 0 , 0.7);
 }
-
+.container input , 
+.container select{
+    width: 100%;
+    padding: 5px;
+}
 input,
 select{
     font-size: 20px;
     border-radius: 15px;
-    margin-top: 15px;
+    margin: 15px 0px 15px 0px;
 }
 select{
     font-size: 15px;
@@ -43,7 +106,7 @@ form{
     border-radius: 20px;
     padding: 30px;
     width: 420px; 
-    height: 320px;
+    height: 365px;
     margin: auto;
 }  
 button{
@@ -89,6 +152,13 @@ section{
     height: 620px;
 }
 
+.btn {
+    border: 1px solid rgb(156,120,103) ;
+    padding: 5px 10px;
+    border-radius: 18px;
+    transition: 0.3s;
+    border-width: 2.5px;
+}
 footer {
     display: flex;
     font-family: Roboto;
@@ -96,13 +166,11 @@ footer {
     align-items: center;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
-    padding: -1px 30px;
+    padding: 5px;
     margin-top: auto;
     height: 15vh;
-    padding-top: 10px;
-
 
 }
 .contact{
@@ -118,10 +186,10 @@ footer a {
 }
 .social{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0px 50px;
+    padding: 10px 50px;
 }
 .social a:hover{
     color: white;
