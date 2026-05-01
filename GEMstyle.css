@@ -153,11 +153,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin: 10px 20px
 }
 footer a {
     color: white;
     display: block;
-    margin: 10px 0;
+    margin: 10px 20px;
     text-decoration: none;
 }
 .social{
