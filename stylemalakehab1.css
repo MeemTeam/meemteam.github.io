@@ -145,7 +145,7 @@ footer {
     align-items: center;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
     padding: 5px;
     margin-top: auto;
@@ -188,13 +188,4 @@ footer a {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 10px;
     width: 100%;
-}
-@media screen and (max-width: 600px){
-    nav ul {
-        flex-direction: column;
-    }
-    body {
-        display: block;
-        overflow-x: auto;
-    }
 }
