@@ -119,8 +119,8 @@ th{
   color: rgb(255, 255 ,255);
 }
 tr:hover{
-  background-color:rgb(156, 120, 103);
-  cursor: pointer;
+  background-color:rgb(205, 168, 138);
+  color: #ffffff;
 }
 .buttons{
   display: flex;
@@ -137,6 +137,10 @@ button{
   cursor: pointer;
   font-family: Roboto;
   color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+button:hover{
+   background-color: rgb(205, 168, 138);
 }
 
 footer {
