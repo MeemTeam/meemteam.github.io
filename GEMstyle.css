@@ -116,6 +116,7 @@ th, td{
 }
 th{
   background-color:rgb(156, 120, 103);
+  color: rgb(255, 255 ,255);
 }
 tr:hover{
   background-color:rgb(156, 120, 103);
@@ -130,9 +131,9 @@ tr:hover{
 }
 button{
   background-color:rgb(156, 120, 103);
-  border-radius: 15px;
-  padding:10px 40px;
-  font-size:20px;
+  border-radius: 10%;
+  padding: 5px;
+  font-size:25px;
   cursor: pointer;
   font-family: Roboto;
   color: rgb(255, 255, 255);
