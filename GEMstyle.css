@@ -135,6 +135,7 @@ button{
   font-size:20px;
   cursor: pointer;
   font-family: Roboto;
+  color: rgb(255, 255, 255);
 }
 
 footer {
