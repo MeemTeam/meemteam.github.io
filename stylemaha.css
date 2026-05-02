@@ -124,23 +124,6 @@ button{
     
 }
 
-.backbtn{
-    position: absolute;
-    margin: 15px auto;
-    text-align: center;
-    padding: 5px 10px;
-    border: 2px solid rgb(94, 62, 47);
-    border-radius: 20px;
-    transform: scale(1.05);
-    font-size: 30px;
-    display: block;
-    justify-content: center;
-    width: fit-content;
-    margin-bottom: 450px;
-    margin-top: 30px;
-    margin-left: 60px;
-}
-
 button:hover{
     background-color: rgb(150, 108, 89);
     color: rgb(255, 255, 255);
