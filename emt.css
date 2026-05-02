@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 body{
     background-color: rgb(228, 204,193);
 
@@ -31,23 +31,21 @@ h1{
     letter-spacing: 0.5px;
     color:rgb(50, 17, 1);
     font-weight: 550;
+    margin-bottom: 5px;
 
 }
 h2{
     text-align: center;
     padding: 15px;
-    font-size: 39px;
+    font-size: 30px;
 }
 .head{
-    padding-bottom: 18px;
-    font-size: 29px;
+    padding-bottom: 10px;
+    font-size: 20px;
     text-align: center;
-    line-height: 33px;
-
 }
 hr{
     border:0.5px solid blanchedalmond ;
-
 }
 img{
     height: 230px;
@@ -72,11 +70,11 @@ img{
     transition: all 0.3s ease;
 }
 .container{
-    max-width: 82%;
+    max-width: 80%;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
-    margin: 80px auto; 
+    margin: 60px auto; 
     
 }
 .images{
@@ -93,7 +91,11 @@ img{
 
  h3{
     padding: 15px 0;
-    font-size: 26px;
+    font-size: 18px;
+}
+
+p{
+    font-size: 16px;
 }
 
  #b{
@@ -103,7 +105,7 @@ img{
     font-size: 30px;
     /* border: 1px solid rgb(48, 48, 48); */
     border-radius: 5px;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color:rgb(156, 120, 103) ;
     box-shadow: 3px 3px 15px rgb(36, 36, 36);
     transition: all 0.3s ease;
@@ -120,6 +122,7 @@ img{
     display: flex;
     justify-content: center;
     margin: 50px 0; 
+    margin-bottom: 60px;
  }   
  
  table{
@@ -133,6 +136,7 @@ img{
 }
 th{
     background-color: rgb(156, 120, 103);
+    color: rgb(255, 255, 255);
 }
 th,td{
     border: 1px solid  rgb(50, 17, 1);
@@ -199,3 +203,17 @@ footer a {
     padding-top: 10px;
     width: 100%;
 }
+
+ #btn-color{
+            border: 3px solid rgb(156,120,103) ;
+            background-color: rgb(156,120,103);
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
+            padding: 5px 10px;
+            border-radius: 20px;
+            }
+            #btn-color:hover{
+            outline: 2px solid rgb(156,120,103);
+            border-color: rgb(156,120,103);
+            transform: scale(1.05);
+            color: white;
+            }
