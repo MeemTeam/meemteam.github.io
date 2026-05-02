@@ -147,8 +147,9 @@ th,td{
     padding: 10px;
 }
 
-td:hover{
-    background-color: rgba(67, 43, 31, 0.282);
+tr:hover{
+   background-color: rgb(205, 168, 138);
+   color: #f9f9f9;
 }
  footer {
     display: flex;
