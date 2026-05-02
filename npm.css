@@ -1,0 +1,182 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    height: 100vh;
+    background-color: rgb(228, 204, 193);
+}
+
+.photo img {
+    width: 100%;
+    height: 300px;
+
+}
+
+
+h1 {
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.title p {
+    letter-spacing: 1.5px;
+    padding: 10px;
+    margin-bottom: 40px;
+
+}
+
+.title p bold {
+    font-size: 25px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 45px;
+    justify-content: center;
+
+}
+
+.container .card {
+    background-color: rgb(156, 120, 103);
+    box-shadow: 2px 2px 2px #000;
+    width: 300px;
+    height: 370px;
+    border-radius: 10px;
+}
+
+.container .card img {
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.container .card img:hover {
+    border-radius: 90%;
+    transition-duration: 1s;
+}
+
+.container .card p {
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.container .card h4 {
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+table th {
+    padding: 10px;
+    background-color: rgb(156, 120, 103);
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+table td {
+    padding: 5px;
+    background-color: rgb(156, 120, 103);
+    letter-spacing: 1px;
+}
+
+table td:hover {
+    border-radius: 10px;
+    background-color: #a9846a;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px;
+
+}
+
+.button button {
+    background-color: rgb(156, 120, 103);
+    padding: 10px 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    border-radius: 15px;
+    background-color: #a9846a;
+}
+
+section {
+    height: 100px;
+}
+
+footer {
+    display: flex;
+    font-family: Roboto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+    height: 15vh;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+footer a {
+    color: white;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.social a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    width: 100%;
+}
