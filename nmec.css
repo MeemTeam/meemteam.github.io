@@ -59,9 +59,18 @@
 
  /*upper details*/
  .detailsup p{
-   font-size: 22px;
-   padding: 10px;
+   padding: 5px;
    margin-left: 25px;
+ }
+
+ .detailsup .introo{
+   font-size: 20px;
+   margin-top: 0;
+ }
+
+ .detailsup .introtitle{
+   font-size: 30px;
+   margin-bottom: 0;
  }
 
 /*button*/
