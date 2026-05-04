@@ -4,7 +4,7 @@
     box-sizing: border-box;
 } 
 body{
-    background-color: rgb(228, 204,193);
+    background-color: var(--bg-color);
     font-family:Roboto;
 
 }
@@ -13,14 +13,14 @@ h1{
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-position: center;
     font-size: 50px;
     text-align: center;
     padding-top: 240px;
     color: rgb(229, 229, 217);
     letter-spacing: 1.5px;  
-    box-shadow: 0px 3px 20px rgb(45, 45, 45);
+    box-shadow: 0px 3px 20px rgb(0,0,0,0.3);
 }
 
 .intro{
@@ -30,7 +30,7 @@ h1{
     margin-top: 50px;
     align-items: center;
     letter-spacing: 0.5px;
-    color:rgb(50, 17, 1);
+    color:var(--text-color);
     font-weight: 550;
     margin-bottom: 5px;
 
@@ -58,8 +58,7 @@ img{
     transform: scale(1.05);
 }
 .image{
-    /* background-color:rgba(160, 136, 125, 0.688); */
-    background-color:rgba(255, 255, 255, 0.678);
+    background-color:whitesmoke;
     color:rgb(50, 17, 1);
     padding:15px ;
     margin: 0 30px;
@@ -104,10 +103,9 @@ p{
     padding: 6px ;
     margin: 20px;
     font-size: 30px;
-    /* border: 1px solid rgb(48, 48, 48); */
     border-radius: 5px;
-    color: rgb(255, 255, 255);
-    background-color:rgb(156, 120, 103) ;
+    color: whitesmoke;
+    background-color:var(--btn-color) ;
     box-shadow: 3px 3px 15px rgb(36, 36, 36);
     transition: all 0.3s ease;
     
@@ -133,11 +131,12 @@ p{
     margin-right: auto;
     width: 60%;
     align-items: center;
+    color: var(--about);
 
 }
 th{
-    background-color: rgb(156, 120, 103);
-    color: rgb(255, 255, 255);
+    background-color: var(--btn-color);
+    color: whitesmoke;
 }
 th,td{
     border: 1px solid  rgb(50, 17, 1);
@@ -158,8 +157,8 @@ tr:hover{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    background-color:var(--footer-bg);
     text-align: center;
     padding: 5px;
     margin-top: auto;
@@ -174,7 +173,7 @@ tr:hover{
 
 
 footer a {
-    color: white;
+    color: whitesmoke;
     display: block;
     margin: 10px 0;
     text-decoration: none;
@@ -187,7 +186,7 @@ footer a {
     padding: 10px 50px;
 }
 .social a:hover{
-    color: white;
+    color: whitesmoke;
     transition: 0.3s;
 }
 .icons{
@@ -196,26 +195,26 @@ footer a {
 }
 .icons i{
     font-size: 20px;
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
 }
 .footer-bottom{
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--card-bg);
     padding-top: 10px;
     width: 100%;
 }
 
  #btn-color{
-            border: 3px solid rgb(156,120,103) ;
-            background-color: rgb(156,120,103);
+            border: 3px solid var(--btn-color) ;
+            background-color: var(--btn-color) ;
             transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
             padding: 5px 10px;
             border-radius: 20px;
             }
             #btn-color:hover{
-            outline: 2px solid rgb(156,120,103);
-            border-color: rgb(156,120,103);
+            outline: 2px solid var(--btn-color);
+            border-color: var(--btn-color) ;
             transform: scale(1.05);
-            color: white;
+            color: whitesmoke;
             }
