@@ -10,12 +10,12 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color:rgb(228, 204, 193);
+    background-color:var(--bg-color);
 }
 header{
     width: 100%;
-    height: 80vh;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(MNimages/01.jpg);
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(MNimages/01.jpg);
 
     object-fit: contain;
     background-position: center;
@@ -36,7 +36,7 @@ header h1 {
     color: #fffefe;
 } 
 main{
-    background-color: rgb(228, 204, 193);
+    background-color: var(--bg-color);
     margin: 40px;
 }
 .alex-h2{
@@ -44,7 +44,7 @@ main{
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    color: #000000;
+    color: var(--about);
     font-size: 28px;
     margin-bottom: 10px;
     font-weight: bold
@@ -73,7 +73,7 @@ main{
 
 .card {
     width: 320px;
-    background-color: #ffffff;
+    background-color: rgb(232, 231, 231);
     border-radius: 10px;
     overflow: hidden; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,7 @@ main{
 .cardimg {
     width: 100%;
     height: 180px;
-    background-color: #ffffff;
+    background-color: rgb(232, 231, 231);
     overflow: hidden;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -125,7 +125,7 @@ main{
     line-height: 1.6;
     opacity: 0;
     visibility: hidden;
-    transition:all 0.8s ease-in-out;
+    transition:all 0.6s ease-in-out;
     transform: translateY(30px);
 }
 .cardcont:hover p{
@@ -135,12 +135,13 @@ main{
 }
 
 .ticket-container {
-display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 20px;
     direction: ltr;
+    color: var(--about);
 }
 
 .table-title {
@@ -174,13 +175,13 @@ th,td {
 }
 
 th{
-    background-color: rgb(156, 120, 103);
-    color: rgba(255, 255, 255);
+    background-color: var(--btn-color);
+    color: white;
 }
 
 tr:hover{
     background-color: rgb(205, 168, 138);
-    color: #ffffff;
+    color: white;
 }
 
 .btn-group {
@@ -202,7 +203,7 @@ tr:hover{
 }
 
 .btn-book {
-    background-color: rgb(156, 120, 103);
+    background-color: var(--btn-color);
     color: white;
 }
 
@@ -214,7 +215,7 @@ tr:hover{
 }
 
 .btn-back {
-    background-color: rgb(156, 120, 103);
+    background-color: var(--btn-color);
     color: #ffffff;
     
 }
@@ -232,7 +233,7 @@ footer {
     align-items: center;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--footer-bg);
     text-align: center;
     padding: 5px;
     margin-top: auto;
@@ -246,15 +247,15 @@ footer {
 }
 
 #btn-color{
-            border: 3px solid rgb(156,120,103) ;
-            background-color: rgb(156,120,103);
+            border: 3px solid var(--btn-color) ;
+            background-color: var(--btn-color);
             transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
             padding: 5px 10px;
             border-radius: 20px;
             }
             #btn-color:hover{
-            outline: 2px solid rgb(156,120,103);
-            border-color: rgb(156,120,103);
+            outline: 2px solid var(--btn-color);
+            border-color: var(--btn-color);
             transform: scale(1.05);
             color: white;
             }
@@ -286,7 +287,7 @@ footer a {
 }
 .footer-bottom{
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--card-bg);
     padding-top: 10px;
     width: 100%;
 }
