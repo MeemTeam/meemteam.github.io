@@ -1,0 +1,26 @@
+:root{
+    --bg-color:rgb(228, 204, 193);
+    --form-bg:rgba(146, 93, 68, 0.3);
+    --text-color:rgb(121 97 85);
+    --btn-color:rgb(156,120,103);
+    --navbar-bg: rgba(0, 0, 0, 0.25);
+    --footer-bg:rgba(0, 0, 0, 0.4);
+    --card-bg:rgba(255,255,255,0.1);
+    --about: black;
+    --home-bg:rgba(0,0,0,0);
+    --bg-about-card: rgb(228, 204, 193);
+
+}
+
+[data-theme="dark"]{
+    --bg-color:rgb(47, 35, 30);
+    --form-bg:rgba(124, 101, 86, 0.4);
+    --text-color:rgb(228, 204, 193);
+    --btn-color:rgb(138, 107, 92);
+    --navbar-bg: rgba(0, 0, 0, 0.5);
+    --footer-bg:rgba(0, 0, 0, 0.8);
+    --card-bg:rgba(255,255,255,0.05);
+    --about: whitesmoke;
+    --home-bg:rgba(0,0,0,0.3);
+    --bg-about-card:  rgb(57, 42, 33);
+}

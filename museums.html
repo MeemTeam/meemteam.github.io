@@ -7,6 +7,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="stylemalakehab2.css">
+        <link rel="stylesheet" href="generalstyletheme.css">
+        <script>
+            (function() {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            })();
+        </script>
     </head>
     <body>
         <nav class="navbar">
@@ -17,6 +26,7 @@
                 <li><a href="booking.html">Booking</a></li>
                 <li><a href="signup.html" class="btn">Sign Up</a></li>
                 <li><a href="login.html" class="btn" id="btn-color">Login</a></li>
+                <button id="theme-toggle" class="theme-btn" class="btn" id="btn-color">Dark Mode</button>
             </ul>
         </nav>
         <h1 class="title">Museums of Egypt</h1>
@@ -44,11 +54,11 @@
                 padding: 5px;
                 flex: 1;
                 font-size: 16px;
-                background-color: rgb(228, 204, 193); ;
+                background-color: var(--bg-color); ;
             }
             .search-box button{
                 color:white ;
-                background-color: rgb(156,120,103);
+                background-color: var(--btn-color);
                 border: none;
                 padding: 10px 25px;
                 border-radius: 50px;
@@ -56,7 +66,7 @@
                 transition: 0.3s;
             }
             .search-box button:hover{
-                background-color: rgb(214, 165, 100);
+                background-color: rgb(196, 153, 97);
             }
             .search-box:focus-within{
                 box-shadow: 0 0 10px rgba(164, 108, 4, 0.7);
@@ -182,6 +192,7 @@
             });
             });
         </script>
+        <script src="theme.js"></script>
     </body>
     
 </html>

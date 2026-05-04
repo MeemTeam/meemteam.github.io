@@ -5,18 +5,18 @@
     font-size: Roboto;
 }
 body{
-    background-color: rgb(228, 204, 193);
+    background-color: var(--bg-color);
 }
 #btn-color{
-    border: 3px solid rgb(156,120,103) ;
-    background-color: rgb(156,120,103);
+    border: 3px solid var(--btn-color) ;
+    background-color: var(--btn-color) ;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
     padding: 5px 10px;
     border-radius: 20px;
 }
 #btn-color:hover{
-    outline: 2px solid rgb(156,120,103);
-    border-color: rgb(156,120,103);
+    outline: 2px solid var(--btn-color);
+    border-color: var(--btn-color);
     transform: scale(1.05);
     color: white;
 }
@@ -26,10 +26,10 @@ body{
 .navbar{
     position: absolute;
     border-radius: 70px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: var(--navbar-bg);
     margin-top: 10px;
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,9 +58,28 @@ body{
 }
 .navbar ul li a:hover {
     transition: 0.3s;
-    background-color: rgb(156,120,103);
+    background-color: var(--btn-color) ;
     border-radius: 18px;
     padding: 7px;
+}
+.theme-btn{
+    display: flex;
+    padding: 7px 10px;
+    border: 3px solid var(--btn-color) ;
+    background-color: var(--btn-color) ;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
+    border-radius: 20px;
+    color: whitesmoke;
+    margin-left: 20px;
+    font-size: inherit;
+    font-family: Roboto;
+    margin-top: -8px;
+}
+.theme-btn:hover{
+    outline: 2px solid var(--btn-color);
+    border-color: var(--btn-color);
+    transform: scale(1.05);
+    color: white;
 }
 
 
@@ -75,7 +94,7 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 80px 20px;
-    color: black;
+    color: var(--about);
 }
 .container{
     max-width: 1200px;
@@ -95,7 +114,7 @@ h1{
 .underline {
     width: 80px;
     height: 4px;
-    background-color: rgb(156,120,103); 
+    background-color: var(--btn-color) ; 
     margin: 0 auto 20px;
     border-radius: 2px;
 }
@@ -116,20 +135,21 @@ h1{
 }
 
 .about-card {
-    background: rgba(255, 255, 255, 0.1); 
+    background: var(--card-bg); 
     backdrop-filter: blur(8px);
     padding: 40px;
     border-radius: 25px;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--card-bg);
     transition: all 0.4s ease;
     font-family: Roboto;
+    background-color: var(--bg-about-card);
 }
 
 .about-card:hover {
     transform: translateY(-15px);
-    background: rgb(156,120,103);
-    border-color:rgb(156,120,103);
+    background: var(--btn-color) ;
+    border-color:var(--btn-color) ;
 }
 
 
@@ -138,7 +158,7 @@ h1{
 
 
 .btn {
-    border: 1px solid rgb(156,120,103) ;
+    border: 1px solid var(--btn-color) ;
     padding: 5px 10px;
     border-radius: 18px;
     transition: 0.3s;
@@ -151,7 +171,7 @@ footer {
     align-items: center;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--footer-bg);
     text-align: center;
     padding: 5px;
     margin-top: auto;
@@ -191,16 +211,7 @@ footer a {
 }
 .footer-bottom{
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--card-bg);
     padding-top: 10px;
     width: 100%;
-}
-@media screen and (max-width: 600px){
-    nav ul {
-        flex-direction: column;
-    }
-    body {
-        display: block;
-        overflow-x: auto;
-    }
 }

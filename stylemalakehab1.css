@@ -15,35 +15,36 @@ body{
 .hero{
     flex: 1;
     display: flex;
+    background-color: var(--home-bg);
 
 }
 #btn-color{
-    border: 3px solid rgb(156,120,103) ;
-    background-color: rgb(156,120,103);
+    border: 3px solid var(--btn-color) ;
+    background-color: var(--btn-color);
     transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
     padding: 5px 10px;
     border-radius: 20px;
 }
 #btn-color:hover{
-    outline: 2px solid rgb(156,120,103);
-    border-color: rgb(156,120,103);
+    outline: 2px solid var(--btn-color);
+    border-color: var(--btn-color);
     transform: scale(1.05);
-    color: white;
+    color: whitesmoke;
 }
 .navbar{
     position: absolute;
     border-radius: 70px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: var(--navbar-bg);
     margin-top: 15px;
     width: 100%;
     padding: 0px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid whitesmoke;
 }
 .logo{
-    color: white;
+    color: whitesmoke;
     font-size: 24px;
     font-family: 'Poppins';
     size: 10px;
@@ -57,7 +58,7 @@ body{
     margin-left: 20px;
 }
 .navbar ul li a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     font-weight: bold;
     font-size: large;
@@ -65,7 +66,7 @@ body{
 }
 .navbar ul li a:hover {
     transition: 0.3s;
-    background-color: rgb(156,120,103);
+    background-color: var(--btn-color);
     border-radius: 18px;
     padding: 7px;
 }
@@ -83,7 +84,7 @@ body{
     font-weight: bold;
     display: flex;
     gap: 20px;
-    color: white;
+    color: whitesmoke;
     overflow: hidden;
     text-shadow: 2px 2px 8px rgba(0 , 0 , 0 , 0.7);
 }     
@@ -124,15 +125,27 @@ body{
 
 
 
-
-
-
-
-
-
-
+.theme-btn{
+    display: flex;
+    padding: 7px 10px;
+    border: 3px solid var(--btn-color) ;
+    background-color: var(--btn-color) ;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s ;
+    border-radius: 20px;
+    color: whitesmoke;
+    margin-left: 20px;
+    font-size: inherit;
+    font-family: Roboto;
+    margin-top: -8px;
+}
+.theme-btn:hover{
+    outline: 2px solid var(--btn-color);
+    border-color: var(--btn-color);
+    transform: scale(1.05);
+    color: white;
+}
 .btn {
-    border: 1px solid rgb(156,120,103) ;
+    border: 1px solid var(--btn-color) ;
     padding: 5px 10px;
     border-radius: 18px;
     transition: 0.3s;
@@ -144,8 +157,8 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    color: whitesmoke;
+    background-color: var(--footer-bg);
     text-align: center;
     padding: 5px;
     margin-top: auto;
@@ -158,7 +171,7 @@ footer {
     gap: 30px;
 }
 footer a {
-    color: white;
+    color: whitesmoke;
     display: block;
     margin: 10px 0;
     text-decoration: none;
@@ -171,7 +184,7 @@ footer a {
     padding: 10px 50px;
 }
 .social a:hover{
-    color: white;
+    color: whitesmoke;
     transition: 0.3s;
 }
 .icons{
@@ -180,12 +193,12 @@ footer a {
 }
 .icons i{
     font-size: 20px;
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
 }
 .footer-bottom{
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--card-bg);
     padding-top: 10px;
     width: 100%;
 }
