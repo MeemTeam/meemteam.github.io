@@ -1,85 +1,89 @@
- body{
-    height: 100vh;
-    background-color: rgb(228, 204, 193);
-    font-family: Roboto;
- }
  *{
    box-sizing: border-box;
- }
+}
 
- /*cards*/
- /*images*/
-  .images img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    
- }
- 
- .cards{
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    padding: 20px;
-    gap: 40px;
-    justify-content: center;
-    overflow: hidden;
- }
 
- .card{
-    background: #f9f9f9;
-    width: 300px;
-    padding: 0px;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    
-    transition: 0.3s;
- }
+body{
+   height: 100vh;
+   background-color: var(--bg-color);
+   font-family: Roboto;
+}
 
- .card:hover{
+
+/*cards*/
+/*images*/
+.images img{
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+
+}
+
+.cards{
+   display: grid;
+   grid-template-columns: repeat(3, 300px);
+   padding: 20px;
+   gap: 40px;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.card{
+   background: whitesmoke;
+   width: 300px;
+   padding: 0px;
+   border-radius: 10px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   transition: 0.3s;
+}
+
+.card:hover{
    transform: translateY(-10px);
- }
+}
 
- .content p{
-    font-size: 20px;
-    text-align: center;
-    padding: 5px;
-    font-weight: bold;
-    color: #794008;
- }
-
- .cards p{
+.content p{
+   font-size: 20px;
    text-align: center;
- }
+   padding: 5px;
+   font-weight: bold;
+   color: #794008;
+}
+
+.cards p{
+   text-align: center;
+}
 
 /*end cards*/
 
 
- /*upper details*/
- .detailsup p{
+/*upper details*/
+.detailsup p{
    padding: 5px;
    margin-left: 25px;
- }
+   color: var(--about);
+}
 
- .detailsup .introo{
+.detailsup .introo{
    font-size: 20px;
    margin-top: 0;
- }
+   color: var(--about);
+}
 
- .detailsup .introtitle{
+.detailsup .introtitle{
    font-size: 30px;
    margin-bottom: 0;
-  text-align:center;
-  font-weight:bold;
- }
+   text-align:center;
+   font-weight:bold;
+}
 
 /*button*/
 .button{
    font-size: 25px;
-   background-color: rgb(156, 120, 103);
-   color: #f9f9f9;
+   background-color: var(--btn-color);
+   color: whitesmoke;
    padding: 5px;
    border: none;
    border-radius: 10%;
@@ -120,11 +124,12 @@ table{
    border-collapse: collapse;
    text-align: center;
    width: 450px;
+   color: var(--about);
 }
 th{
-   background-color: rgb(156, 120, 103);
+   background-color: var(--btn-color);
    font-size: 20px;
-   color: #f9f9f9;
+   color: whitesmoke;
 }
 
 td{
@@ -133,7 +138,7 @@ td{
 
 tr:hover{
    background-color: rgb(205, 168, 138);
-   color: #f9f9f9;
+   color: whitesmoke;
 }
 
 th, td{
@@ -142,54 +147,54 @@ th, td{
 }
 
 /*footer*/
- footer {
-    display: flex;
-    font-family: Roboto;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    padding: 5px;
-    margin-top: auto;
-    height: 18vh;
+footer {
+   display: flex;
+   font-family: Roboto;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   color: whitesmoke;
+   background-color: var(--footer-bg);
+   text-align: center;
+   padding: 5px;
+   margin-top: auto;
+   height: 18vh;
 
 }
 .contact{
    display: flex;
-    align-items: center;
-    gap: 30px;
+   align-items: center;
+   gap: 30px;
 }
 footer a {
-    color: white;
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
+   color: whitesmoke;
+   display: block;
+   margin: 10px 0;
+   text-decoration: none;
 }
 .social{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding: 10px 50px;
 }
 .social a:hover{
-    color: white;
-    transition: 0.3s;
+   color: whitesmoke;
+   transition: 0.3s;
 }
 .icons{
-    display: flex;
-    gap: 15px;
+   display: flex;
+   gap: 15px;
 }
 .icons i{
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
+   font-size: 20px;
+   color: whitesmoke;
+   cursor: pointer;
 }
 .footer-bottom{
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 10px;
-    width: 100%;
+   text-align: center;
+   border-top: 1px solid var(--card--bg);
+   padding-top: 10px;
+   width: 100%;
 }
