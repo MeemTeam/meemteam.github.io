@@ -6,7 +6,16 @@
         <title>LUXOR Museum</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="stylemalakkorashy.css" id="">
+        <link rel="stylesheet" href="generalstyletheme.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" id="">
+        <script>
+            (function() {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            })();
+        </script>
     </head>
     <body>
       <header>
@@ -197,5 +206,6 @@
              </section>
              <!--luxor end-->
       </main>
+      <script src="theme.js"></script>
     </body>
 </html>
